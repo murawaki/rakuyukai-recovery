@@ -13,9 +13,9 @@
 poetry をインストールしたうえで
 ```sh
 poetry install
+```
 
 waybackup コマンドを実行
-```
 
 ```sh
 poetry run waybackup --last --url http://www.rakuyukai.org/
