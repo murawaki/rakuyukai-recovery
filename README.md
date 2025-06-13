@@ -23,6 +23,11 @@ poetry run waybackup --last --url http://www.rakuyukai.org/
 
 waybackup_snapshots ディレクトリ以下に Internet Archive から取得したファイルが保存される
 
+以下のスクリプトでは wp-login.php の存在を WordPress サイトの判定に使っているが、chugoku/wp-login.php は Internet Archive に保存されていないので、touch でしのぐ。
+
+```sh
+touch waybackup_snapshots/www.rakuyukai.org/chugoku/wp-login.php
+```
 
 ## WordPress が生成した HTML ファイル群から WXR ファイルを生成
 
